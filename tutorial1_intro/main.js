@@ -32,3 +32,5 @@ d3.csv("../data/Book2.csv").then(data => {
     .text(d =>d);
  
 })
+
+console.log("is this working?")
