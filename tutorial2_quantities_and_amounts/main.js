@@ -46,72 +46,61 @@
 
 
 
-// data load
-// reference for d3.autotype: https://github.com/d3/d3-dsv#autoType
-d3.csv("../data/textsent.csv", d3.autoType).then(data => {
-    console.log(data);
-  
-    /** CONSTANTS */
-    // constants help us reference the same values throughout our code
-    const width = window.innerWidth * 0.9,
-      height = window.innerHeight / 3,
-      paddingInner = 0.2,
-      margin = { top: 20, bottom: 40, left: 40, right: 40 };
-  
-    /** SCALES */
-    // reference for d3.scales: https://github.com/d3/d3-scale
-    const xScale = d3
-      .scaleBand()
-      .domain(data.map(d => d.Day))
-      .range([margin.left, width - margin.right])
-      .paddingInner(paddingInner);
-  
-    const yScale = d3
-      .scaleLinear()
-      .domain([0, d3.max(data, d => d.TextSent)])
-      .range([height - margin.bottom, margin.top]);
-  
-    // reference for d3.axis: https://github.com/d3/d3-axis
-    const xAxis = d3.axisBottom(xScale).ticks(data.length);
-  
-    /** MAIN CODE */
-    const svg = d3
-      .select("#d3-container")
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height)
-      .attr('transform','rotate(90deg)');
-  
-    // append rects
-    const rect = svg
-      .selectAll("rect")
-      .data(data)
-      .join("rect")
-      .attr("y", d => yScale(d.TextSent))
-      .attr("x", d => xScale(d.Day))
-      .attr("width", xScale.bandwidth())
-      .attr("height", d => height - margin.bottom - yScale(d.TextSent))
-      .attr("fill", "red")
-  
-    // append text
-    const text = svg
-      .selectAll("text")
-      .data(data)
-      .join("text")
-      .attr("class", "label")
-      // this allows us to position the text in the center of the bar
-      .attr("x", d => xScale(d.Day) + (xScale.bandwidth() / 2))
-      .attr("y", d => yScale(d.TextSent))
-      .text(d => d.TextSent)
-      .attr("dy", "1.25em");
-  
-    svg
-      .append("g")
-      .attr("class", "axis")
-      .attr("transform",'rotate(90deg)')
-      .attr("transform", `translate(0, ${height - margin.bottom})`)
-      .call(xAxis);
-  });
+d3.csv("../data/textsent.csv",d3.autoType).then(data =>{
+  console.log(data);
+
+
+const width = window.innerWidth * 0.9,
+height = window.innerHeight / 3,
+paddingInner = 0.2,
+margin = { top: 20, bottom: 40, left: 40, right: 40 };
+
+const yScale = d3
+.scaleBand()
+.domain(data.map(d=>d.Day))
+.range([height-margin.bottom,margin.top])
+.paddingInner(paddingInner)
+
+const xScale =d3
+.scaleLinear()
+.domain([0,d3.max(data,d=>d.TextSent)])
+.range([margin.left, width-margin.right])
+console.log(xScale.range())
+console.log(xScale(0))
+
+const svg =d3
+.select("#d3-container")
+.append("svg")
+.attr("width",width)
+.attr("height",height)
+
+const rect =svg
+.selectAll("rect")
+.data(data)
+.join("rect")
+.attr("x", d=> xScale(0))
+// .attr("x",d=>xScale(d.TextSent))
+// .attr("x",0)
+.attr("y", d=>yScale(d.Day))
+// .attr("width",100)
+.attr("width",d=> xScale(d.TextSent))
+.attr("height",yScale.bandwidth())
+// .attr("width",yScale.bandwidth())
+// .attr("height", d=>height-margin.bottom-yScale(d.Day))
+.attr("fill","red")
+
+const yAxis= d3.axisLeft(yScale)
+
+svg
+.append("g")
+.attr("class", "axis")
+// .attr("transform",'rotate(90deg)')
+// .attr("transform", `translate(0, ${height - margin.bottom})`)
+.attr("transform",`translate(${margin.left})`)
+.call(yAxis)
+
+})
+
 
 
 
