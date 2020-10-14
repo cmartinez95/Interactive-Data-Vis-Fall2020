@@ -53,7 +53,7 @@ d3.csv("../data/textsent.csv",d3.autoType).then(data =>{
 const width = window.innerWidth * 0.9,
 height = window.innerHeight / 3,
 paddingInner = 0.2,
-margin = { top: 20, bottom: 40, left: 40, right: 40 };
+margin = { top: 20, bottom: 40, left: 70, right: 40 };
 
 const yScale = d3
 .scaleBand()
@@ -87,7 +87,7 @@ const rect =svg
 .attr("height",yScale.bandwidth())
 // .attr("width",yScale.bandwidth())
 // .attr("height", d=>height-margin.bottom-yScale(d.Day))
-.attr("fill","red")
+.attr("fill","purple")
 
 const yAxis= d3.axisLeft(yScale)
 
