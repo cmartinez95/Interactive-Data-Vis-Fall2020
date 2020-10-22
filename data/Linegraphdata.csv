@@ -1,32 +1,32 @@
-﻿Date,Money
-"Friday, December 1, 2017",54
-"Saturday, December 2, 2017",222
-"Sunday, December 3, 2017",279
-"Monday, December 4, 2017",120
-"Tuesday, December 5, 2017",0
-"Wednesday, December 6, 2017",85
-"Thursday, December 7, 2017",227.12
-"Friday, December 8, 2017",71
-"Saturday, December 9, 2017",170
-"Sunday, December 10, 2017",214
-"Monday, December 11, 2017",146
-"Tuesday, December 12, 2017",0
-"Wednesday, December 13, 2017",116
-"Thursday, December 14, 2017",222.33
-"Friday, December 15, 2017",120
-"Saturday, December 16, 2017",197
-"Sunday, December 17, 2017",138
-"Monday, December 18, 2017",115
-"Tuesday, December 19, 2017",0
-"Wednesday, December 20, 2017",120
-"Thursday, December 21, 2017",393.17
-"Friday, December 22, 2017",127
-"Saturday, December 23, 2017",119
-"Sunday, December 24, 2017",185
-"Monday, December 25, 2017",300
-"Tuesday, December 26, 2017",0
-"Wednesday, December 27, 2017",259
-"Thursday, December 28, 2017",269.08
-"Friday, December 29, 2017",0
-"Saturday, December 30, 2017",0
-"Sunday, December 31, 2017",0
+﻿Month,Food,Rage,Entertainment,Gas,Dates,Bills,Clothes,Vacations,Other,,
+January,0,0,10,50,100,1000,0,0,500,,
+February,20,42,10,50,47,1000,0,0,25,,
+March,100,500,10,50,0,1000,0,1000,0,,
+April,40,0,20,50,30,1000,50,0,0,,
+May,10,20,50,50,100,1000,1000,10,400,,
+June,50,100,10,50,200,1000,70,20,40,,
+July,70,200,10,50,34,1000,0,70,70,,
+August,20,40,70,50,60,1000,25,500,80,,
+September,10,70,70,50,100,1000,100,0,1,,
+October,0,90,50,0,70,1000,500,0,500,,
+November,82,100,10,50,10,1000,100,0,0,,
+December,0,700,10,50,90,1000,700,1000,1000,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
