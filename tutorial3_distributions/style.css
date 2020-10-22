@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+}
+body{
+    /* background-color: royalblue; */
+    background-image: linear-gradient(to bottom,white,blue);
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+g.hover > rect{
+    opacity: 1;
+}
+rect{
+    pointer-events: none;
+}
+/* .opacity:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('https://f.i.etsystatic.com/24535918/r/il/c1fbba/2528400869/il_794xN.2528400869_21mt.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+} */
+/* body{
+background-image: url(https://f.i.etsystatic.com/24535918/r/il/c1fbba/2528400869/il_794xN.2528400869_21mt.jpg);
+
+} */
