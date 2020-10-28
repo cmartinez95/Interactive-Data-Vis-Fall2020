@@ -1,4 +1,7 @@
-Project 1 - Exploratory Visualization
-
+<h1> Project 1 - Exploratory Visualization <h1>
+ 
 For the exploratory project, I would like to look at New York State and New York City unemployment statistics from https://labor.ny.gov/stats/lslaus.shtm. The data I would like to look at features every month starting from January 1976- September 2020, with Labor force, emoloyment, unemployment, and unemployment rate for both NYS and NYC (separate sheets within the same excel file). My idea was to have the x-axis be time, one y-axis being thousands, and the other being percentage. This is because unemployment percentage follows a different scale than the other three. My idea was to have two dropdown boxes where you can select any of the 8 categories (labor force, employment,unemployment,unemployment rate for both NYS and NYC) to compare and contrast their progress over time. For example, you could compare NYS employment with NYC employment to see if there is any longitudional relationship between them. For effect, I would like to have a slow transition of the formation of the line in order to get the "moving in time" feel for the data to really feel its progression (maybe even have a dropdown box featuring rate so that you can see it as transition for or just so you can see it right from the start).
 If this is too crazy, then I am just going to do two separate graphs, one for NYS and one for NYC, comparing labor force and unemployment rate for each.
+
+<h2> Sketch <h2>
+  
