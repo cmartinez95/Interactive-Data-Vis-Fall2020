@@ -19,7 +19,7 @@ let state = {
 
 /* LOAD DATA */
 // + SET YOUR DATA PATH
-d3.csv("../../data/Linegraphdata.csv", d3.autotype) //d =>({
+d3.csv("../../data/Linegraphdata.csv", d3.autoType) //d =>({
   // month: new Date(1995,array.indexOf(d.Month),1           this is to make my own columns 
   // category: d.Category,
   // amount: +d.Amount
