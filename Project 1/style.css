@@ -1,0 +1,86 @@
+body{
+    background: rgb(255,150,0, .10);
+}
+
+.trend1{
+fill:none;
+stroke: #3C91E6;
+}
+
+.trend2{
+    fill:none;
+    stroke:darkgreen;
+}
+
+#h1-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 50px; */
+}
+
+#dropdown1{
+    color: #3C91E6;
+}
+
+#dropdown2{
+    color:darkgreen;
+}
+/* path{
+    fill: none;
+    stroke: #000; */
+
+
+#d3-container{
+    margin-left: 50px;
+}
+
+h1{
+    display: inline-block;
+    /* position: relative; */
+    /* vertical-align: center; */
+    line-height: 125px;
+    /* margin-right: 4px; */
+text-align: center;
+font-family: 'Permanent Marker', cursive;
+color:black;
+}
+
+#dropdowns{
+    text-align:center;
+    font-family:'Permanent Marker', cursive;
+    /* line-height: -200px; */
+    margin-bottom: 15px;
+    /* padding-bottom: 80px; */
+}
+
+#dropdown1{
+    font-family: 'Permanent Marker', cursive;
+}
+
+#dropdown2{
+    font-family: 'Permanent Marker', cursive;
+}
+
+#nyc-logo{
+    display: inline-block;
+    /* padding-left: 400px; */
+    /* align-items: center; */
+    justify-content: center;
+    height: 175px;
+    width: 175px;
+    float: right;
+    margin-left: 50px;
+    
+
+}
+
+#nys-logo{
+    /* margin-left: 50px; */
+    display: inline-block;
+    float: left;
+    height: 175px;
+    width: 175px;
+    margin-right: 50px;
+}

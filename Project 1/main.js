@@ -1,7 +1,7 @@
 // Constants and Globals
 const width = window.innerWidth *0.7,
     height = window.innerHeight *0.7,
-    margin = { top: 20, bottom: 50, left: 60, right: 40 },
+    margin = { top: 20, bottom: 50, left: 60, right: 50 },
     radius = 5
     default_selection ='Select a Category'
 
@@ -94,7 +94,7 @@ svg= d3
 svg
 .append('g')
 .attr('class','y-axis')
-.style('transform','translate(50px,0)')
+.style('transform','translate(60px,0)')
 .call(d3.axisLeft(yScale))
 
 svg.append('g')
@@ -113,11 +113,7 @@ function draw(){
     // .scaleLinear()
     // .domain(d3.extent(state.data, d=>d[1]))
     // .range([height - margin.bottom, margin.top]);
-   // yScale =d3
-   //     .scaleLinear()
-   //     .domain([0,d3.max(state.data, d=> row.Number)])
-   //     .range([height-margin.bottom,margin.top]);
-
+   
 //   you only need one line function for both since they are using the same characteristics
 const lineFunction =d3
 .line()
@@ -160,6 +156,8 @@ const line2 = svg
   enter =>
   enter.append("path")
   .attr("class","trend2"),
+//   .attr("style", "fill":"none")
+//   .attr("style", "stroke":"#000")
   update => update,
   exit=> exit.remove()
 )
@@ -170,6 +168,8 @@ selection.transition()
 )
 
 }
+
+
 
 // // Constants and Globals
 // const width = window.innerWidth *0.7,
