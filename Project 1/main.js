@@ -34,7 +34,7 @@ d3.csv("../../data/Long Format Unemployment.csv", d3.autoType)
 
 function init(){
 
-// Scales (not vocal scales)
+// Scales 
 
 xScale = d3
     .scaleTime()
@@ -91,18 +91,18 @@ svg= d3
 .attr("width",width)
 .attr("height",height);
 
-// svg
-// .append('g')
-// .attr('class','y-axis')
-// .style('transform','translate(50px,0)')
-// .call(d3.axisLeft(yScale))
+svg
+.append('g')
+.attr('class','y-axis')
+.style('transform','translate(50px,0)')
+.call(d3.axisLeft(yScale))
 
-// svg.append('g')
-//   .attr('class', 'x-axis')
-//   .attr('transform', `translate(0, ${height - margin.top - 20})`)
-//   .call(d3.axisBottom(xScale))
-//   .tickValues(d3.extent(state.data, row =>row.date))
-//   .tickFormat(d3.format("0"));
+svg.append('g')
+  .attr('class', 'x-axis')
+  .attr('transform', `translate(0, ${height - margin.top - 20})`)
+  .call(d3.axisBottom(xScale))
+  .tickValues(d3.extent(state.data, row =>row.date))
+  .tickFormat(d3.format("0"));
 
 draw();
 }
@@ -143,7 +143,7 @@ const line1 = svg
 )
 .call(selection =>
   selection.transition()
-  .duration(100)
+  .duration(10)
   .attr("d",d=>lineFunction(d))
   )
 
