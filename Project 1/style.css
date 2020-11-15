@@ -4,7 +4,7 @@ body{
 
 .trend1{
 fill:none;
-stroke: #3C91E6;
+stroke:darkblue;
 }
 
 .trend2{
@@ -21,7 +21,7 @@ stroke: #3C91E6;
 }
 
 #dropdown1{
-    color: #3C91E6;
+    color:darkblue;
 }
 
 #dropdown2{
