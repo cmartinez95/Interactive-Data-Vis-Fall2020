@@ -3,7 +3,7 @@ const width = window.innerWidth *0.7,
     height = window.innerHeight *0.7,
     margin = { top: 20, bottom: 50, left: 60, right: 50 },
     radius = 5
-    default_selection ='Select a Category'
+  
 
 // Time to make some variables
 let svg;
@@ -39,7 +39,7 @@ function init(){
 xScale = d3
     .scaleTime()
     .domain(d3.extent(state.data, row =>row.date))
-    .range([margin.left, width - margin.right]);
+    .range([margin.left-(-30), width - margin.right]);
 
 
 //  yScale =d3
@@ -91,18 +91,39 @@ svg= d3
 .attr("width",width)
 .attr("height",height);
 
+
+ // AXES
+ const xAxis = d3.axisBottom(xScale);
+ const yAxis = d3.axisLeft(yScale);
+
+//  yAxis
 svg
 .append('g')
 .attr('class','y-axis')
-.style('transform','translate(60px,0)')
-.call(d3.axisLeft(yScale))
+.style('transform','translate(90px,0)')
+.call(yAxis)
+.append("text")
+.attr("class", "axis-label-y")
+.attr("x", "-22%")
+.attr("transform", 'rotate(-90)')
+.attr("dy", "-15%")
+.style("fill","black")
+.text("Population");
 
+// xAxis
 svg.append('g')
-  .attr('class', 'x-axis')
+  .attr('class', 'axis x-axis')
   .attr('transform', `translate(0, ${height - margin.top - 20})`)
-  .call(d3.axisBottom(xScale))
-  .tickValues(d3.extent(state.data, row =>row.date))
-  .tickFormat(d3.format("0"));
+//   .attr('transform', 'translate(0, 60px)')
+  .call(xAxis)
+//   .tickValues(d3.extent(state.data, row =>row.date))
+//   .tickFormat(d3.format("0"))
+  .append("text")
+  .attr("class", "axis-label-x")
+  .attr("x", "55%")
+  .attr("dy", "4em")
+  .style("fill","black")
+  .text("Year");
 
 draw();
 }
