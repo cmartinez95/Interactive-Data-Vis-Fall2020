@@ -1,0 +1,10 @@
+﻿name,parent,value
+Origin,,
+Instagram,Origin,100
+Facebook,Origin,200
+Twitter,Origin,100
+Linkedin,Origin,50
+Email,Origin,25
+Company Website,Origin,20
+Other,Origin,5
+Empty,Origin,500
