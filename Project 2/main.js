@@ -1,6 +1,22 @@
 
-d3.csv("../../data/fakedata.csv",function(data) {
-    console.log(data);
+// d3.csv("../../data/fakedata.csv",function(data) {
+//     console.log(data)
+//     var child = data.columns[0]; 
+//     var parent = data.columns[1]; 
+//     stratify = d3.stratify() 
+//                 .id(d => d[child]) 
+//                 .parentId(d => d[parent]); 
+//     var root=stratify(data) 
+//     console.log(root)
+//     console.log(data);
+
+    d3.csv("../../data/fakedata.csv", d3.autoType)
+.then(raw_data => {
+    console.log(raw_data);
+    console.log(typeof raw_data)
+
+
+ 
 
     const width = window.innerWidth *0.7,
     height = window.innerHeight *0.7,
@@ -15,10 +31,12 @@ var svg = d3.select("#d3-container1")
 .attr("width", width)
 .attr("height", height)
 
+
 var root =d3.stratify()
 .id(function(d) { return d.name; })
 .parentId(function(d) { return d.parent; })
-(data);
+(raw_data);
+
 root.sum(function(d) { return +d.value })
 
 d3.treemap()
