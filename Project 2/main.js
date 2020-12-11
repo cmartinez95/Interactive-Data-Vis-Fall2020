@@ -10,7 +10,7 @@
 //     console.log(root)
 //     console.log(data);
 
-    d3.csv("../../data/fakedata.csv", d3.autoType)
+    d3.csv("../../data/GFMedium.csv", d3.autoType)
 .then(raw_data => {
     console.log(raw_data);
     console.log(typeof raw_data)
