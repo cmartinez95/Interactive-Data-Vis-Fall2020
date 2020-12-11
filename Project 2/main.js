@@ -67,9 +67,4 @@ svg
     .text(function(d){ return d.data.name})
     .attr("font-size", "15px")
     .attr("fill", "white")
-
-
-
-
-
 })
