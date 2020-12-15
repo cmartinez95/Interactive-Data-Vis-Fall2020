@@ -1,5 +1,4 @@
 
-
 // d3.csv("../../data/fakedata.csv",function(data) {
 //     console.log(data)
 //     var child = data.columns[0]; 
