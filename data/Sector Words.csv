@@ -1,229 +1,229 @@
-word,Sector,n
-black,Wholesalers,11
-communities,Wholesalers,22
-community,Wholesalers,15
-diversity,Wholesalers,13
-equality,Wholesalers,11
-inclusion,Wholesalers,11
-injustice,Wholesalers,12
-racial,Wholesalers,11
-racism,Wholesalers,12
-stand,Wholesalers,17
-support,Wholesalers,14
-values,Wholesalers,13
-black,Transportation,28
-ceo,Transportation,34
-communities,Transportation,26
-company,Transportation,22
-diversity,Transportation,20
-employees,Transportation,23
-president,Transportation,33
-racial,Transportation,22
-racism,Transportation,23
-stand,Transportation,20
-support,Transportation,20
-world,Transportation,20
-black,Telecommunications,8
-change,Telecommunications,7
-committed,Telecommunications,7
-communities,Telecommunications,8
-enforcement,Telecommunications,7
-justice,Telecommunications,11
-law,Telecommunications,8
-leaders,Telecommunications,7
-officers,Telecommunications,7
-organizations,Telecommunications,7
-people,Telecommunications,8
-police,Telecommunications,13
-zayo,Telecommunications,10
-black,Technology,146
-change,Technology,95
-communities,Technology,99
-community,Technology,79
-employees,Technology,69
-injustice,Technology,69
-people,Technology,85
-racism,Technology,87
-support,Technology,68
-world,Technology,71
-associates,Retailing,40
-black,Retailing,68
-communities,Retailing,58
-community,Retailing,45
-company,Retailing,55
-country,Retailing,40
-diversity,Retailing,41
-racial,Retailing,42
-racism,Retailing,56
-time,Retailing,40
-black,Motor Vehicles &  Parts,6
-change,Motor Vehicles &  Parts,11
-communities,Motor Vehicles &  Parts,6
-company,Motor Vehicles &  Parts,9
-diversity,Motor Vehicles &  Parts,12
-ford,Motor Vehicles &  Parts,7
-inclusion,Motor Vehicles &  Parts,12
-racism,Motor Vehicles &  Parts,6
-team,Motor Vehicles &  Parts,7
-time,Motor Vehicles &  Parts,8
-black,Media,13
-change,Media,14
-community,Media,16
-company,Media,15
-discovery,Media,12
-employee,Media,14
-employees,Media,12
-floyd,Media,12
-organizations,Media,13
-racial,Media,12
-racism,Media,18
-social,Media,12
-support,Media,24
-atlanta,Materials,12
-ceo,Materials,34
-communities,Materials,12
-community,Materials,10
-company,Materials,10
-diversity,Materials,13
-inclusion,Materials,11
-justice,Materials,13
-people,Materials,10
-president,Materials,30
-racial,Materials,10
-support,Materials,10
-black,Industrials,30
-communities,Industrials,22
-community,Industrials,18
-company,Industrials,15
-diversity,Industrials,18
-employees,Industrials,22
-people,Industrials,18
-racial,Industrials,15
-racism,Industrials,20
-support,Industrials,18
-values,Industrials,20
-black,Household Products,56
-communities,Household Products,16
-company,Household Products,26
-employees,Household Products,27
-ensure,Household Products,15
-justice,Household Products,18
-people,Household Products,25
-racial,Household Products,15
-racism,Household Products,29
-support,Household Products,18
-black,"Hotels, Restaurants &  Leisure",32
-change,"Hotels, Restaurants &  Leisure",19
-communities,"Hotels, Restaurants &  Leisure",21
-community,"Hotels, Restaurants &  Leisure",18
-continue,"Hotels, Restaurants &  Leisure",15
-diversity,"Hotels, Restaurants &  Leisure",18
-injustice,"Hotels, Restaurants &  Leisure",15
-people,"Hotels, Restaurants &  Leisure",27
-racial,"Hotels, Restaurants &  Leisure",15
-racism,"Hotels, Restaurants &  Leisure",20
-support,"Hotels, Restaurants &  Leisure",21
-communities,Health Care,68
-community,Health Care,59
-company,Health Care,37
-diversity,Health Care,61
-health,Health Care,57
-inclusion,Health Care,49
-people,Health Care,64
-racial,Health Care,45
-racism,Health Care,50
-time,Health Care,45
-black,"Food, Beverages &  Tobacco",42
-change,"Food, Beverages &  Tobacco",25
-communities,"Food, Beverages &  Tobacco",26
-company,"Food, Beverages &  Tobacco",32
-diversity,"Food, Beverages &  Tobacco",26
-employees,"Food, Beverages &  Tobacco",25
-people,"Food, Beverages &  Tobacco",25
-racism,"Food, Beverages &  Tobacco",38
-support,"Food, Beverages &  Tobacco",30
-team,"Food, Beverages &  Tobacco",25
-time,"Food, Beverages &  Tobacco",29
-associates,Food &  Drug Stores,19
-change,Food &  Drug Stores,12
-communities,Food &  Drug Stores,18
-community,Food &  Drug Stores,10
-company,Food &  Drug Stores,18
-country,Food &  Drug Stores,12
-diversity,Food &  Drug Stores,9
-racism,Food &  Drug Stores,10
-stores,Food &  Drug Stores,9
-time,Food &  Drug Stores,9
-black,Financials,136
-ceo,Financials,322
-chairman,Financials,243
-chief,Financials,174
-communities,Financials,156
-diversity,Financials,133
-executive,Financials,194
-officer,Financials,181
-president,Financials,198
-racism,Financials,144
-address,Engineering &  Construction,4
-black,Engineering &  Construction,8
-communities,Engineering &  Construction,6
-continue,Engineering &  Construction,4
-conversation,Engineering &  Construction,5
-diversity,Engineering &  Construction,4
-inclusion,Engineering &  Construction,4
-inequality,Engineering &  Construction,4
-racism,Engineering &  Construction,10
-statement,Engineering &  Construction,4
-support,Engineering &  Construction,5
-time,Engineering &  Construction,4
-communities,Energy,78
-community,Energy,34
-company,Energy,42
-diversity,Energy,52
-employees,Energy,45
-inclusion,Energy,41
-people,Energy,33
-racial,Energy,40
-racism,Energy,39
-support,Energy,33
-values,Energy,33
-change,Chemicals,13
-communities,Chemicals,12
-community,Chemicals,10
-company,Chemicals,10
-discrimination,Chemicals,11
-diversity,Chemicals,11
-inclusion,Chemicals,9
-racism,Chemicals,13
-stand,Chemicals,11
-world,Chemicals,9
-black,Business Services,35
-ceo,Business Services,94
-chairman,Business Services,75
-chief,Business Services,60
-communities,Business Services,31
-community,Business Services,39
-executive,Business Services,57
-officer,Business Services,60
-president,Business Services,56
-racism,Business Services,34
-american,Apparel,19
-black,Apparel,36
-change,Apparel,15
-community,Apparel,18
-company,Apparel,24
-justice,Apparel,15
-racial,Apparel,19
-racism,Apparel,29
-stand,Apparel,19
-time,Apparel,17
-boeing,Aerospace &  Defense,9
-company,Aerospace &  Defense,10
-death,Aerospace &  Defense,7
-discrimination,Aerospace &  Defense,6
-diversity,Aerospace &  Defense,7
-inclusion,Aerospace &  Defense,6
-racism,Aerospace &  Defense,5
-respect,Aerospace &  Defense,5
-stand,Aerospace &  Defense,5
-values,Aerospace &  Defense,7
+sector,word,n
+Wholesalers,black,11
+Wholesalers,communities,22
+Wholesalers,community,15
+Wholesalers,diversity,13
+Wholesalers,equality,11
+Wholesalers,inclusion,11
+Wholesalers,injustice,12
+Wholesalers,racial,11
+Wholesalers,racism,12
+Wholesalers,stand,17
+Wholesalers,support,14
+Wholesalers,values,13
+Transportation,black,28
+Transportation,ceo,34
+Transportation,communities,26
+Transportation,company,22
+Transportation,diversity,20
+Transportation,employees,23
+Transportation,president,33
+Transportation,racial,22
+Transportation,racism,23
+Transportation,stand,20
+Transportation,support,20
+Transportation,world,20
+Telecommunications,black,8
+Telecommunications,change,7
+Telecommunications,committed,7
+Telecommunications,communities,8
+Telecommunications,enforcement,7
+Telecommunications,justice,11
+Telecommunications,law,8
+Telecommunications,leaders,7
+Telecommunications,officers,7
+Telecommunications,organizations,7
+Telecommunications,people,8
+Telecommunications,police,13
+Telecommunications,zayo,10
+Technology,black,146
+Technology,change,95
+Technology,communities,99
+Technology,community,79
+Technology,employees,69
+Technology,injustice,69
+Technology,people,85
+Technology,racism,87
+Technology,support,68
+Technology,world,71
+Retailing,associates,40
+Retailing,black,68
+Retailing,communities,58
+Retailing,community,45
+Retailing,company,55
+Retailing,country,40
+Retailing,diversity,41
+Retailing,racial,42
+Retailing,racism,56
+Retailing,time,40
+Motor Vehicles &  Parts,black,6
+Motor Vehicles &  Parts,change,11
+Motor Vehicles &  Parts,communities,6
+Motor Vehicles &  Parts,company,9
+Motor Vehicles &  Parts,diversity,12
+Motor Vehicles &  Parts,ford,7
+Motor Vehicles &  Parts,inclusion,12
+Motor Vehicles &  Parts,racism,6
+Motor Vehicles &  Parts,team,7
+Motor Vehicles &  Parts,time,8
+Media,black,13
+Media,change,14
+Media,community,16
+Media,company,15
+Media,discovery,12
+Media,employee,14
+Media,employees,12
+Media,floyd,12
+Media,organizations,13
+Media,racial,12
+Media,racism,18
+Media,social,12
+Media,support,24
+Materials,atlanta,12
+Materials,ceo,34
+Materials,communities,12
+Materials,community,10
+Materials,company,10
+Materials,diversity,13
+Materials,inclusion,11
+Materials,justice,13
+Materials,people,10
+Materials,president,30
+Materials,racial,10
+Materials,support,10
+Industrials,black,30
+Industrials,communities,22
+Industrials,community,18
+Industrials,company,15
+Industrials,diversity,18
+Industrials,employees,22
+Industrials,people,18
+Industrials,racial,15
+Industrials,racism,20
+Industrials,support,18
+Industrials,values,20
+Household Products,black,56
+Household Products,communities,16
+Household Products,company,26
+Household Products,employees,27
+Household Products,ensure,15
+Household Products,justice,18
+Household Products,people,25
+Household Products,racial,15
+Household Products,racism,29
+Household Products,support,18
+"Hotels, Restaurants &  Leisure",black,32
+"Hotels, Restaurants &  Leisure",change,19
+"Hotels, Restaurants &  Leisure",communities,21
+"Hotels, Restaurants &  Leisure",community,18
+"Hotels, Restaurants &  Leisure",continue,15
+"Hotels, Restaurants &  Leisure",diversity,18
+"Hotels, Restaurants &  Leisure",injustice,15
+"Hotels, Restaurants &  Leisure",people,27
+"Hotels, Restaurants &  Leisure",racial,15
+"Hotels, Restaurants &  Leisure",racism,20
+"Hotels, Restaurants &  Leisure",support,21
+Health Care,communities,68
+Health Care,community,59
+Health Care,company,37
+Health Care,diversity,61
+Health Care,health,57
+Health Care,inclusion,49
+Health Care,people,64
+Health Care,racial,45
+Health Care,racism,50
+Health Care,time,45
+"Food, Beverages &  Tobacco",black,42
+"Food, Beverages &  Tobacco",change,25
+"Food, Beverages &  Tobacco",communities,26
+"Food, Beverages &  Tobacco",company,32
+"Food, Beverages &  Tobacco",diversity,26
+"Food, Beverages &  Tobacco",employees,25
+"Food, Beverages &  Tobacco",people,25
+"Food, Beverages &  Tobacco",racism,38
+"Food, Beverages &  Tobacco",support,30
+"Food, Beverages &  Tobacco",team,25
+"Food, Beverages &  Tobacco",time,29
+Food &  Drug Stores,associates,19
+Food &  Drug Stores,change,12
+Food &  Drug Stores,communities,18
+Food &  Drug Stores,community,10
+Food &  Drug Stores,company,18
+Food &  Drug Stores,country,12
+Food &  Drug Stores,diversity,9
+Food &  Drug Stores,racism,10
+Food &  Drug Stores,stores,9
+Food &  Drug Stores,time,9
+Financials,black,136
+Financials,ceo,322
+Financials,chairman,243
+Financials,chief,174
+Financials,communities,156
+Financials,diversity,133
+Financials,executive,194
+Financials,officer,181
+Financials,president,198
+Financials,racism,144
+Engineering &  Construction,address,4
+Engineering &  Construction,black,8
+Engineering &  Construction,communities,6
+Engineering &  Construction,continue,4
+Engineering &  Construction,conversation,5
+Engineering &  Construction,diversity,4
+Engineering &  Construction,inclusion,4
+Engineering &  Construction,inequality,4
+Engineering &  Construction,racism,10
+Engineering &  Construction,statement,4
+Engineering &  Construction,support,5
+Engineering &  Construction,time,4
+Energy,communities,78
+Energy,community,34
+Energy,company,42
+Energy,diversity,52
+Energy,employees,45
+Energy,inclusion,41
+Energy,people,33
+Energy,racial,40
+Energy,racism,39
+Energy,support,33
+Energy,values,33
+Chemicals,change,13
+Chemicals,communities,12
+Chemicals,community,10
+Chemicals,company,10
+Chemicals,discrimination,11
+Chemicals,diversity,11
+Chemicals,inclusion,9
+Chemicals,racism,13
+Chemicals,stand,11
+Chemicals,world,9
+Business Services,black,35
+Business Services,ceo,94
+Business Services,chairman,75
+Business Services,chief,60
+Business Services,communities,31
+Business Services,community,39
+Business Services,executive,57
+Business Services,officer,60
+Business Services,president,56
+Business Services,racism,34
+Apparel,american,19
+Apparel,black,36
+Apparel,change,15
+Apparel,community,18
+Apparel,company,24
+Apparel,justice,15
+Apparel,racial,19
+Apparel,racism,29
+Apparel,stand,19
+Apparel,time,17
+Aerospace &  Defense,boeing,9
+Aerospace &  Defense,company,10
+Aerospace &  Defense,death,7
+Aerospace &  Defense,discrimination,6
+Aerospace &  Defense,diversity,7
+Aerospace &  Defense,inclusion,6
+Aerospace &  Defense,racism,5
+Aerospace &  Defense,respect,5
+Aerospace &  Defense,stand,5
+Aerospace &  Defense,values,7
