@@ -3,7 +3,7 @@ export function chart2(){
 const width = window.innerWidth * 0.9,
 height = window.innerHeight / 3,
 paddingInner = 0.2,
-margin = { top: 20, bottom: 40, left: 70, right: 40 };
+margin = { top: 20, bottom: 40, left: 91, right: 90 };
 
 let svg;
 let xScale;
@@ -35,13 +35,13 @@ yScale = d3
 xScale =d3
 .scaleLinear()
 .domain([0,d3.max(state.data,d=>d.n)])
-.range([margin.left, width-margin.right])
+.range([margin.left, width-margin.right + 150])
 console.log(xScale.range());
 
 xAxis = d3.axisBottom(xScale);
 yAxis = d3.axisLeft(yScale);
 
-const selectElement =d3.select("#dropdown1")
+const selectElement =d3.select("#dropdown3")
 .on("change",function(){
 state.selectedSector = this.value;
 console.log("new value is", this.value);
@@ -59,27 +59,27 @@ selectElement
 selectElement.property("value", "Choose a category");
 
 svg = d3
-.select("#d3-container2")
+.select("#d3-container3")
 .append("svg")
 .attr("width",width)
 .attr("height", height)
 
 svg
 .append('g')
-.attr('class','y-axis')
+.attr('class','y-axis1')
 .style('transform','translate(90px,0)')
 .call(yAxis)
 .append("text")
-.attr("class", "axis-label-y")
+.attr("class", "axis-label-y1")
 .style("fill","black")
 .text("sector");
 
 svg.append('g')
-  .attr('class', 'axis x-axis')
+  .attr('class', 'x-axis1')
   .attr('transform', `translate(0, ${height - margin.top - 20})`)
   .call(xAxis)
   .append("text")
-  .attr("class", "axis-label-x")
+  .attr("class", "axis-label-x1")
   .attr("x", "55%")
   .attr("dy", "4em")
   .style("fill","black")
@@ -100,12 +100,12 @@ yScale.domain(filteredData.map(d=>d.word))
 // yScale.domain([filteredData, d=> d.word])
 xScale.domain([0,d3.max(filteredData,d=>d.n)])
 
-d3.select("g.y-axis")
+d3.select("g.y-axis1")
     .transition()
     .duration(1000)
     .call(yAxis.scale(yScale));
 
-    d3.select("g.x-axis")
+    d3.select("g.x-axis1")
     .transition()
     .duration(1000)
     .call(xAxis.scale(xScale));

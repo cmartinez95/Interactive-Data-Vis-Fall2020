@@ -44,7 +44,7 @@ export function chart1(){
         .attr('width', function (d) { return d.x1 - d.x0; })
         .attr('height', function (d) { return d.y1 - d.y0; })
         .style("stroke", "black")
-        .style("fill", "#69b3a2");
+        .style("fill", "#black");
     svg
     .selectAll("text")
     .data(root.leaves())
