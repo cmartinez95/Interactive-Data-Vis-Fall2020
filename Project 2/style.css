@@ -1,3 +1,22 @@
 p{
-    text-align: center;
+    text-align: left;
+    width: 1150px;
+    font-size: 10px;
+    margin-bottom: 125px;
 }
+
+
+
+h1{
+    font-family: 'Libre Baskerville', serif;
+}
+
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+#dropdown2{
+    font-family: 'Libre Baskerville', serif;}
+
+ #dropdown3{
+    font-family: 'Libre Baskerville', serif;}
+

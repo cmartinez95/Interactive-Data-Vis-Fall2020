@@ -69,10 +69,7 @@ export function chart3(){
     .attr('class','y-axis')
     .style('transform','translate(90px,0)')
     .call(yAxis)
-    .append("text")
-    .attr("class", "axis-label-y")
-    .style("fill","black")
-    // .text("type");
+    
     
     svg.append('g')
       .attr('class', 'x-axis')
@@ -83,7 +80,7 @@ export function chart3(){
       .attr("x", "55%")
       .attr("dy", "4em")
       .style("fill","black")
-      .text("n");
+      .text("Word Count");
     
     draw();
     }

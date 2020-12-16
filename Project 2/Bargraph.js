@@ -69,10 +69,7 @@ svg
 .attr('class','y-axis1')
 .style('transform','translate(90px,0)')
 .call(yAxis)
-.append("text")
-.attr("class", "axis-label-y1")
-.style("fill","black")
-.text("sector");
+
 
 svg.append('g')
   .attr('class', 'x-axis1')
@@ -83,7 +80,7 @@ svg.append('g')
   .attr("x", "55%")
   .attr("dy", "4em")
   .style("fill","black")
-  .text("n");
+  .text("Word Count");
 
 draw();
 }
