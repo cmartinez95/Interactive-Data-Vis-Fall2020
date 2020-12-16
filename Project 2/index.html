@@ -12,21 +12,21 @@
     <img src="" alt="">
     <div id="main-body">
       <h1>The Fortune 1000 Companies' Response to the Death of George Floyd</h1>
-      <div id=d3-container1></div>
-      <p id="p-fig-1">Figure 1: A treemap showing where the companies desemminated their statements (FB stands for Facebook).</p>
+      <p id="p-fig-0"> On May 25th, 2020, George Floyd was killed, inciting major protests all around the United States, citing police brutality and racism. Many people, as well as companies, decided to openly respond to his death. An excel spreadsheet containing the Fortune 1000 companies and their first published statements in regards to George Floyd’s death was compiled, which was done through scouring the internet. Analyzes, including a lexicon analysis of the statements, were conducted in R. Below are three figures, showing where these statements were published, the overall top words said in the statements, and the top words said by each sector. There is no political or racial backing to this project. Excel spreadsheet available upon request. </p>      <div id=d3-container1></div>
+      <p id="p-fig-1">Figure 1: A treemap showing where the companies desemminated their statements (FB stands for Facebook). A total of 572 companies made statements.</p>
       <div id="dropdowns">
-        <label for="dropdown2">Figure 2</label>
+        <label for="dropdown2">Word Type</label>
         <select id="dropdown2" name="dropdown2"></select>
       </div>
     </div>
     <div id=d3-container2></div>
-    <p id="p-fig-2">Figure 2: This bargraph is displaying the top 10 (more if the words are tied in value) words used in all of the statements, separated as being either a regular word, or a stop word. A stopword refers to the most common words in a language (the, and, is, etc), which were removed using the stop_words variable from the TidyText package in R, with the manual addition of "we're". The regular words are the top used words that are not stop words.  </p>
+    <p id="p-fig-2">Figure 2: This bar graph is displaying the top 10 (more if the words are tied in value) words used in all of the statements, separated as being either a regular word, or a stop word. A stopword refers to the most common words in a language (the, and, is, etc), which were removed using the stop_words variable from the TidyText package in R, with the manual addition of "we're". The regular words are the top used words that are not stop words.  </p>
     <div id="op2">
-      <label for="dropdown3">Figure 3</label>
+      <label for="dropdown3">Sector</label>
       <select id="dropdown3" name="dropdown3"></select>
     </div>
     <div id=d3-container3> </div>
-    <p id="p-fig-3">Figure 3: This bargraph displays the top 10 (more if the words are tied in value) words used by each sector. The data was originally filtered using R.</p>
+    <p id="p-fig-3">Figure 3: This bar graph displays the top 10 (more if the words are tied in value) words used by each sector.</p>
 
     <script src="../lib/d3.js"></script>
     <script src="main.js" type="module"></script>
