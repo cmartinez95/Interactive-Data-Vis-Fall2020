@@ -6,6 +6,8 @@ margin = { top: 20, bottom: 40, left: 70, right: 40 };
 let svg;
 let xScale;
 let yScale;
+let xAxis;
+let yAxis;
 
 
 let state ={
@@ -15,28 +17,29 @@ selectedSector: null,
 
 
 d3.csv("../data/Sector Words.csv",d3.autoType).then(raw_data =>{
-state.data =raw_data
-console.log(raw_data);
+    state.data =raw_data;
+    console.log(raw_data);
 init();
 })
 
 function init(){
+
 yScale = d3
 .scaleBand()
-.domain(data.map(d=>d.word))
+.domain(state.data.map(d=>d.word))
 .range([height-margin.bottom,margin.top])
 .paddingInner(paddingInner);
 
 xScale =d3
 .scaleLinear()
-.domain([0,d3.max(data,d=>d.n)])
+.domain([0,d3.max(state.data,d=>d.n)])
 .range([margin.left, width-margin.right])
 console.log(xScale.range());
 
-const xAxis = d3.axisBottom(xScale);
-const yAxis = d3.axisLeft(yScale);
+xAxis = d3.axisBottom(xScale);
+yAxis = d3.axisLeft(yScale);
 
-const selectElement =d3. select("#dropdown1")
+const selectElement =d3.select("#dropdown1")
 .on("change",function(){
 state.selectedSector = this.value;
 console.log("new value is", this.value);
@@ -44,7 +47,7 @@ draw();
 
 });
 
-selectedElement
+selectElement
 .selectAll("option")
 .data(["Choose a category",...Array.from(new Set(state.data.map(d => d.sector)))])
 .join("option")
@@ -59,27 +62,83 @@ svg = d3
 .attr("width",width)
 .attr("height", height)
 
+svg
+.append('g')
+.attr('class','y-axis')
+.style('transform','translate(90px,0)')
+.call(yAxis)
+.append("text")
+.attr("class", "axis-label-y")
+.style("fill","black")
+.text("sector");
+
+svg.append('g')
+  .attr('class', 'axis x-axis')
+  .attr('transform', `translate(0, ${height - margin.top - 20})`)
+  .call(xAxis)
+  .append("text")
+  .attr("class", "axis-label-x")
+  .attr("x", "55%")
+  .attr("dy", "4em")
+  .style("fill","black")
+  .text("n");
+
 draw();
 }
 
 function draw(){
+ 
 let filteredData =[];
 if (state.selectedSector != null) {
     filteredData =state.data.filter(d => d.sector === state.selectedSector);
 }
+console.log(filteredData)
+
+yScale.domain(filteredData.map(d=>d.word))
+// yScale.domain([filteredData, d=> d.word])
+xScale.domain([0,d3.max(filteredData,d=>d.n)])
+
+d3.select("g.y-axis")
+    .transition()
+    .duration(1000)
+    .call(yAxis.scale(yScale));
+
+    d3.select("g.x-axis")
+    .transition()
+    .duration(1000)
+    .call(xAxis.scale(xScale));
+
 
 const rect = svg
 .selectAll("rect")
-.data(filteredData)
+.data(filteredData, d => d.word)
 .join(
 enter =>
 enter.append("rect")
 .attr("class","bar")
-.attr("x", d=> xScale(0))
 .attr("y", d=> yScale (d.word))
-.attr("width", d=> xScale(d.n))
+.attr("width", d=> xScale(d.n)),
+// .transition()
+// .duration(1000)
+// .attr("y", d=> yScale (d.word))
+// .attr("width", d=> xScale(d.n)),
+
+update => update
+.transition()
+.duration(1000)
+.attr("y", d=> yScale (d.word))
+.attr("width", d=> xScale(d.n)),
+
+exit => exit
+.transition()
+.duration(1000)
+.attr("width", 0)
+.remove())
+.attr("x", d=> xScale(0))
 .attr("height", yScale.bandwidth())
-.attr("fill","black"),
-update => update,
-exit => exit.remove())
+.attr("fill","black")
+
+
 }
+
+
